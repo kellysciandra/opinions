@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--pink)
+}
+
+body {
+  font-family: 'Concert One', cursive;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+  
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  outline: .5px solid slategrey;
+  border-radius: 10px;
+}
+
+:root {
+  --pink: rgb(64, 255, 150);
+  --blue: rgb(0, 0, 0);
+  --beige: (218, 203, 192);
+  --black: #2b2b2b;
+}
+
+/* Utility */
+
+a {
+  text-decoration: none;
+  color: black
+}
+.toggler {
+  border: none!important;
+}
+
+.beats {
+  color: var(--black);
+  font-size: 5em;
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  border: none;
+  background: none;
+  border: 5px solid;
+  width: 125%;
+  margin: 1rem;
+  align-content: center;
+}
+.btn:hover {
+  background: var(--blue)
+}
+
+h1 {
+  font-size: 2.5em;
+  border: 10px solid orange;
+  margin: .5rem;
+  padding: .5rem;
+  text-align: center;
+}
+
+input[type=text], input[type=password]
+{
+  border:none;
+  outline: none;
+}
+
+input.no-outline:focus {
+  outline: none;
+  border: none;
+}
+
+/* NavBar */
+
+#navbar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.nav .brand_link {
+  border: 5px solid black;
+  font-size: 2.5em!important;
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: center;
+  width: 25%;
+
+}
+.nav .brand_link:hover {
+  border: 5px solid transparent;
+  transform: rotate(-10deg);
+  color: orange
+}
+
+.poo {
+  font-size: 5em;
+}
+/* main page container */
+
+.showcase {
+  margin-top: 15%;
+}
+
+/* main grid */
+
+.grid {
+  display: grid;
+  grid-template-areas: 
+  'type display nav';
+  text-align: center;
+  margin:.5rem;
+  padding: .5rem; 
+}
+
+/* section 1 */
+
+.ask_form_card {
+  grid-area: type;
+  width: 350px;
+  padding: 2rem;
+  border: 10px solid
+}
+.pending_message {
+  margin: auto;
+  color: orange!important;
+}
+
+
+/* section 2 */
+
+.display_chat_text {
+  grid-area: display;
+  border: 10px solid;
+  width: 600px;
+  height: 900px;
+}
+
+.display_chat_text_header {
+  margin-top: -20%;
+}
+
+.chat_messages {
+  display: grid;
+  grid-template-areas: 
+  'name message';
+  text-align: center;
+  justify-content: center;
+  margin: .25rem;
+  padding: .25rem;
+  margin: 1rem
+}
+
+.display_name {
+  grid-area: name;
+  font-size: 1.25em;
+  font-style: bold;
+}
+
+.display_message {
+  grid-area: message;
+  color: orange!important;
+  font-size: 1.25em!important;
+  margin: 1rem
+}
+
+button {
+  border: none!important
+}
+
+.far {
+  border: none;
+  color: blue
+}
+
+
+
+
+/* section 3 */
+.chat_nav {
+  grid-area: nav;
+  border: 10px solid;
+  width: 350px;
+}
+
+.chat_links {
+  margin: 2rem
+}
+
+
+
+
+
+
+
+
+
+å
+
+/* .input{
+  border: none;
+  border: 5px solid black;
+  padding: 1rem;
+  font-size: 1em;
+  background: none!important;
+}
+.input::-ms-fill {
+  background: none!important;
+}
+
+.input_display {
+  font-size: 1.5em;
+  width: 150px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+#bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35%;
+}
+
+#bottom .column1 {
+  padding: .75rem;
+}
+#bottom .column2 {
+  padding: .75rem;
+}
+#bottom .column3 {
+  padding: .75rem;
+}
+#bottom .column4 {
+  padding: .75rem;
+}
+#bottom .column5 {
+  padding: .75rem;
+}
+
